@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #8572ff;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+  background-color: #4d3dac;
+  width: 100%;
+}
+
+header .empty-box {
+  width: 2.4rem;
+  height: 2.4rem;
+  display: block;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+main {
+  margin-top: 4rem;
+  padding: 0 9.5rem 9.5rem 9.5rem;
+}
+
+main .hero {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4.7rem;
+  align-items: center;
+}
+
+main .hero img {
+  width: 14.7rem;
+  height: 14.7rem;
+  border-radius: 50%;
+  margin-bottom: 6rem;
+}
+
+main .hero p {
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: 400;
+  color: #fff;
+  width: 80rem;
+}
+
+main .hero .circle {
+  margin-bottom: 6rem;
+  background: #fff;
+  width: 14.7rem;
+  height: 14.7rem;
+  border-radius: 50%;
+}
+
+main .available-schedule-times {
+  display: flex;
+  flex-direction: column;
+}
+
+main .available-schedule-times h2 {
+  font-size: 4rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+main .available-schedule-times .schedule-times-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem 0;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+main .available-schedule-times .schedule-times-wrapper .schedule-time {
+  display: flex;
+  flex-direction: column;
+  width: 35rem;
+  border-radius: 0.8rem;
+  border: 4px solid #cfcfcf;
+  background: #fff;
+  padding: 3rem;
+}
+
+main .available-schedule-times .schedule-times-wrapper .schedule-time .time {
+  margin-bottom: 1.5rem;
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #2e246f;
+}
+
+main .available-schedule-times .schedule-times-wrapper .schedule-time .date {
+  font-weight: 500;
+  font-size: 3.2rem;
+  margin-bottom: 3.6rem;
+  color: #5244a3;
+}
+
+main
+  .available-schedule-times
+  .schedule-times-wrapper
+  .schedule-time
+  .schedule-button {
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #fff;
+  height: 6rem;
+  transition: 0.15s ease;
+  outline: 0;
+  cursor: pointer;
+  background: #2e246f;
+  border-radius: 0.8rem;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+main
+  .available-schedule-times
+  .schedule-times-wrapper
+  .schedule-time
+  .schedule-button:hover {
+  background: #5645c5;
+}
+
+@media screen and (max-width: 900px) {
+  main .hero p {
+    width: 75vw;
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 889px) {
+  main {
+    padding: 0 6.5rem 6.5rem 6.5rem;
+  }
+
+  main .available-schedule-times .schedule-times-wrapper .schedule-time {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  main .available-schedule-times h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  main .hero p {
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  header .empty-box {
+    display: none;
+  }
+
+  header a {
+    font-size: 2.8rem;
+  }
+
+  main .hero p {
+    width: 92.5vw;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  main {
+    padding: 0 2.5rem 2.5rem 2.5rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  header a {
+    font-size: 2rem;
+  }
+
+  main .available-schedule-times .schedule-times-wrapper .schedule-time .time {
+    font-size: 3rem;
+  }
+
+  main .available-schedule-times .schedule-times-wrapper .schedule-time .date {
+    font-size: 2.6rem;
+  }
+}
