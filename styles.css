@@ -23,6 +23,9 @@ header {
   padding: 2rem 5rem;
   background-color: #4d3dac;
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0
 }
 
 header .empty-box {
@@ -39,7 +42,7 @@ header a {
 }
 
 main {
-  margin-top: 4rem;
+  margin-top: 12rem;
   padding: 0 9.5rem 9.5rem 9.5rem;
 }
 
